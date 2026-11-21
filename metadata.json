@@ -1,0 +1,8 @@
+{
+  "name": "Vows & Venues",
+  "description": "Luxury community hall booking and reservation management platform for weddings, celebrations, cultural gatherings, and executive conferences.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

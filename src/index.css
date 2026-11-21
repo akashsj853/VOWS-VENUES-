@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-accent: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --color-espresso-950: #100B08;
+  --color-espresso-900: #21150F;
+  --color-espresso-800: #2A1C15;
+  --color-gold-500: #D6B65B;
+  --color-gold-400: #E8CB72;
+  --color-cream-100: #F6EBD8;
+  --color-muted-400: #B9AA99;
+}
+
+@layer base {
+  html {
+    background-color: #100B08;
+    color: #F6EBD8;
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+  }
+
+  body {
+    overflow-x: hidden;
+    background-color: #100B08;
+    color: #F6EBD8;
+    letter-spacing: 0.005em;
+  }
+
+  h1, h2, h3 {
+    text-wrap: balance;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-accent {
+  font-family: var(--font-accent);
+}
+
+.font-mono-num {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Luxury champagne gold subtle glow */
+.gold-glow {
+  box-shadow: 0 0 32px rgba(214, 182, 91, 0.14);
+}
+
+.gold-border {
+  border-color: rgba(214, 182, 91, 0.32);
+}
+
+.surface-border {
+  border-color: rgba(255, 255, 255, 0.14);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #100B08;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3A271E;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D6B65B;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
